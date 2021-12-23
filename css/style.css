@@ -57,6 +57,7 @@ section{
     font-family: 'Ubuntu Mono', monospace;
     font-size: 100%;
     /* border: solid 1px; */
+    padding: 5px;
     display: block;
     margin: 0% 2% 0% 2%;
     clear: right;
@@ -71,7 +72,7 @@ section a{
     padding: 5px;
     border: solid;
     border-width: 2px 0px;
-    margin-top: 1%;
+    margin-top: 2%;
     display: inline-block;
 }
 
