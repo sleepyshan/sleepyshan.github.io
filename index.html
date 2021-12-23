@@ -7,42 +7,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>shan does shan stuffs</title>
 	<link id="pagestyle" rel="stylesheet" href="css/style.css">
+<!-- script starts here -->
+    <script>
+        function doodleset(pattern){
+            document.getElementById("proj").style.backgroundImage = "url('images/" + pattern + ".jpg')";
+            }
 
-    <script>
-        function doodleset(){
-            document.getElementById("proj").style.backgroundImage = "url('images/clouds.jpg')";
+            function patternoff(){
+            document.getElementById("proj").style.backgroundImage = "none";
             }
-    </script>
-    <script>
-        function sewing(){
-            document.getElementById("proj").style.backgroundImage = "url('images/mezza.jpg')";
+
+        function swapstyle(sheet) {
+            document.getElementById("pagestyle").href = "css/" + sheet + ".css"; 
             }
+
     </script>
-    <script>
-        function social(){
-            document.getElementById("proj").style.backgroundImage = "url('images/dashes.jpg')";
-            }
-    </script>
-    <script>
-        function multi(){
-            document.getElementById("proj").style.backgroundImage = "url('images/thin.jpg')";
-            }
-    </script>
-    <script>
-        function java(){
-            document.getElementById("proj").style.backgroundImage = "url('images/dots.jpg')";
-            }
-    </script>
-    <script>
-        function swapdark(sheet) {
-            document.getElementById("pagestyle").href = "css/dark-theme.css";  
-}
-    </script>
-    <script>
-        function swaplight(sheet) {
-            document.getElementById("pagestyle").href = "css/style.css";  
-}
-    </script>
+<!-- script ends here -->
 </head>
 <body>
     <header>
@@ -51,17 +31,17 @@
     <nav>
         <a href="https://www.google.com/">About</a>
         <br>
-        <span class="button" onclick="swaplight()">☀️</span>
-        <span class="button" onclick="swapdark()">🌙</span>
+        <span onclick="swapstyle('style')">☀️</span>
+        <span onclick="swapstyle('darktheme')">🌙</span>
     </nav>
     <section id="proj">
         Projects
         <p></p>
-        <a onmouseover="doodleset()" href="https://www.google.com/">january 2022 doodleset</a><br>
-        <a onmouseover="sewing()" href="https://www.google.com/">sewing adventures</a><br>
-        <a onmouseover="social()" href="https://www.google.com/">social media</a><br>
-        <a onmouseover="multi()" href="https://www.google.com/">multimedia crossovers</a><br>
-        <a onmouseover="java()" href="https://www.google.com/">javascript nonsense</a><br>
+        <a onmouseover="doodleset('lines')" onmouseleave="patternoff()" href="https://www.google.com/">january 2022 doodleset</a><br>
+        <a onmouseover="doodleset('mezza')" onmouseleave="patternoff()" href="https://www.google.com/">sewing adventures</a><br>
+        <a onmouseover="doodleset('clouds')" onmouseleave="patternoff()" href="https://www.google.com/">social media</a><br>
+        <a onmouseover="doodleset('dashes')" onmouseleave="patternoff()" href="https://www.google.com/">multimedia crossovers</a><br>
+        <a onmouseover="doodleset('dots')" onmouseleave="patternoff()" href="https://www.google.com/">javascript nonsense</a><br>
     </section>
     
 </body>
