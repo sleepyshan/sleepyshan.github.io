@@ -16,7 +16,7 @@
             document.getElementById("proj").style.backgroundSize = "cover";
             }
 
-            function patternoff(){
+        function patternoff(){
             document.getElementById("proj").style.backgroundImage = "none";
             }
 
@@ -46,6 +46,19 @@
         <a onmouseover="doodleset('dashes')" onmouseleave="patternoff()" href="https://www.google.com/">multimedia crossovers</a><br>
         <a onmouseover="doodleset('dots')" onmouseleave="patternoff()" href="https://www.google.com/">javascript nonsense</a><br>
     </section>
+
+    <form>
+        <label for="hideout">click here to visit my secret hideout</label>
+        <input type="button" id="password" onclick="inprogress()">
+        <p id="status">:-)</p>
+    </form>
+
+<script>
+    function inprogress(){
+        document.getElementById('status').innerHTML="im working on it lol";
+    }
+</script>
+
     
 </body>
 </html>

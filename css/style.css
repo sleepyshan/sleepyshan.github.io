@@ -85,3 +85,16 @@ section a:visited{
     font-size: 500%;
     color: red;
 }
+
+form{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 150%;
+    padding: 15px;
+    margin: auto;
+    width: 250px;
+    text-align: center;
+}
+
+input{
+    margin: 15px;
+}
