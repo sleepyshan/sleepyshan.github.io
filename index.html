@@ -27,7 +27,7 @@
         function nameguest(){
             var guest = prompt("What is your name?");
 
-            if (guest == 0){
+            if (guest == 0 || guest == null){
             document.getElementById('greetings').innerHTML = "Hi, stranger!";
 
             } else {
