@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <title>shan does shan stuffs</title>
+	<link id="pagestyle" rel="stylesheet" href="css/style.css">
+    <script src="script/quizscript2.js" defer></script>
+</head>
+<body onload = "nextquestionload()">
+    <div id="quizcontainer">
+        <h1 id="bigquestion">QUESTION GOES HERE</h1>
+    
+        <ul>
+        <li><input type="radio">
+        <label id="optiona">Option A</label></li>
+
+        <li><input type="radio">
+        <label id="optionb">Option B</label></li>
+        </ul>
+    </div>
+    <button id="Submit" onclick="nextquestionload()">Submit</button>
+</body>
