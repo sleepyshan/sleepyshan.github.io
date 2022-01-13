@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <title>shan does quiz stuffs</title>
+	<link id="pagestyle" rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src = "script/scriptquiz.js" defer></script>
+</head>
+<body onload="startQuiz()">
+    <div id="quizcontainer" class="center-screen">
+        <h1 id="H1question">Question Text</h1>
+        <ul>
+            <li>
+                <input type="radio" id="a" name="answer" class="quizanswer">
+                <label id="labelatext" for="a">Longanswer</label>
+            </li>
+            <li>
+                <input type="radio" id="b" name="answer" class="quizanswer">
+                <label id="labelbtext" for="b">Even longer answer</label>
+            </li>
+            <li>
+                <input type="radio" id="c" name="answer" class="quizanswer">
+                <label id="labelctext" for="c">Super duper long answer</label>
+            </li>
+            <li>
+                <input type="radio" id="d" name="answer" class="quizanswer">
+                <label id="labeldtext" for="d">Answer4</label>
+            </li>                                    
+        </ul>
+        <button onclick="submitans()" id="submit">Submit</button>
+        <div id="tally">Score: 0/3</div>
+    </div>
+</body>
