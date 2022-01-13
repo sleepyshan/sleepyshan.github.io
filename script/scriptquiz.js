@@ -10,7 +10,7 @@ const quizData = [
         d: 'This is Answer 1D',
         correct: 'This is Answer 1A'
     }, {
-        question: 'The answer is 2B?',
+        question: 'The answer is 2B',
         a: 'This is Answer 2A',
         b: 'This is Answer 2B',
         c: 'This is Answer 2C',
@@ -57,7 +57,11 @@ function submitans() {
 
         currentQuiz++;
         loadQuiz();   
-        document.querySelector('input[type="radio"]').checked = false;            
+        document.getElementById("a").checked = false;
+        document.getElementById("b").checked = false;
+        document.getElementById("c").checked = false;
+        document.getElementById("d").checked = false;
+
 
     }
 }
