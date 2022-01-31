@@ -12,6 +12,8 @@ body{
 hr{
     margin-top: 3%;
     margin-bottom: 5%;
+    border: 1px dashed #21BEC8;
+    width: 50%;
 }
 
 h2{
@@ -27,7 +29,7 @@ a{
     justify-content: center;
     width:200px;
     font-size: 1.5rem;
-    background-color: teal;
+    background-color: #21BEC8;
     color: white;
     text-decoration: none;
     border: solid 1px;
