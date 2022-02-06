@@ -1,7 +1,7 @@
-#header{
-    width: 100vw;
+.header{
     display: flex;
-    justify-content: space-around;
+    align-content: space-between;
+
 }
 
 .myh1{
@@ -10,8 +10,8 @@ width: 100px;
 }
 
 .myspan{
-display: inline-block;
 align-self: flex-end;
+margin-left: auto;
 font-size: 3em;
 margin-top:20px;
 margin-bottom: 10px;
