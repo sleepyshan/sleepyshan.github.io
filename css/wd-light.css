@@ -1,0 +1,88 @@
+.CapstoneAnnounce:link, .CapstoneAnnounce:visited{
+    text-decoration: none;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1%;
+}
+
+.CapstoneAnnounce:hover, .CapstoneAnnounce:active {
+    background-color: red;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+}
+
+
+ul, ol {
+    padding: 2%;
+}
+
+.textlist{
+    padding: 1%;
+}
+
+.horirule{
+    margin: 2%;
+}
+
+.courseexplain{
+    margin-bottom: 5%;
+}
+
+.highlightheader{
+    background-color: yellow;
+    padding: 1%;
+}
+
+.addborder{
+    border-style: none;
+    border-width: 1px 0px;
+    background-color: lightskyblue;
+    padding: 1% 5%;  
+}
+
+.iconresize20{
+    width: 20px;
+    margin-bottom: 10px;
+}
+
+.normallinks{
+    text-decoration: none;
+}
+
+.iconresize15{
+    width: 15px;
+    margin-bottom: 10px;
+}
+
+/* TIMER RELATED CSS */
+.timercontainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.timerbox{
+    line-height: 10px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.timercaption{
+    text-align: center;
+    font-weight: bold;
+}
+
+/* QUIZ RELATED CSS */
+.col-sm-10 > div {
+    border:2px dashed grey;
+    padding:25px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Coursera Web Design for everybody: Capstone Project</title>
+
+<meta name="description" content="Roughly 155 characters">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/wd-light.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- <script src="script.js"></script>
+<script src="script/scripttimer.js"></script> -->
+</head>
+
+<body onload="startQuiz()">
+
+<!-- NAVIGATION -->
+
+<div class="container sticky-top">
+  <nav class="navbar sticky-top navbar-expand-md navbar-light" style="background-color:white">
+    <div class="container-fluid">
+      
+      <!-- BRAND -->
+      <a href="wd-index.html" class="navbar-brand">Yu Shan</a>
+      <!-- HAMBURGER BUTTON. DATA-BOOTSTRAP(BS)-TOGGLE. ARIA IS BASICALLY MARKUP INFORMATION -->
+      <!-- The toggle tells Bootstrap what to do and the target tells Bootstrap which element is going to open -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavDropdown" aria-controls="NavDropdown" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- COLLAPSE.NAVBAR-COLLAPSE ALWAYS TGT -->
+      <div class="collapse navbar-collapse" id="NavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="wd-index.html" class="nav-link active" aria-current="page">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="wd-rubric.html" class="nav-link">Scoring Rubric</a>
+          </li>
+          <!-- DROPDOWN STARTS HERE -->
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="NavDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Modules
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="NavDropdownMenuLink">
+              <li><a href="wd-java.html" class="dropdown-item">JavaScript</a></li>
+              <li><a href="wd-ux.html" class="dropdown-item">UX/UI</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- STICKY ANNOUNCEMENT -->
+      <div>
+        <a class="CapstoneAnnounce" href="wd-rubric.html">Click here to check out the Scoring Rubric for this Capstone Project</a>
+      </div>
+  
+    </div>
+  </nav>
+</div>
+
+<!-- CONTAINER 1 -->
+<div class="container g-5">
+
+  <!-- INTRO AND TIMER -->
+  <div class="row g-5 align-items-center">
+
+    <!-- JAVA INTRO -->
+    <div class="col-lg-7 g-5">
+
+      <h1>JavaScript</h1>
+            
+      <p>Out of all the new skills I had to pick up while going through the Web Design for Everybody programme, 
+      JavaScript was probably the one that caught my attention the most. Each little app feels like a self-contained
+      puzzle.</p>
+
+      <p>I learned about operators and logical thinking, as well as nifty little tricks like creating functions. The
+      first JavaScript project I tackled by myself is this timer app on the right of this paragraph!
+      </p>
+
+      <p>I also took on a second project - creating a Quiz app. I've embedded right below this paragraph as well, feel
+      free to give it a shot and try out the quiz. This one was a little tougher to do as I had to learn how to use an
+      array, as well as if-else statements. 
+      </p>
+    </div>
+
+    <!-- TIMER APP -->
+    <div class="col-lg-5 g-5">
+
+    <section>
+
+    <div class="timercontainer">
+    
+        <div id="daysC2" class="timerbox">
+            <p id="days2">0</p>  
+            <span>days</span>
+        </div>
+    
+        <div id="hoursC2" class="timerbox">
+            <p id="hours2">0</p>  
+            <span>hours</span>
+        </div>
+    
+        <div id="minutesC2" class="timerbox">
+            <p id="minutes2">0</p>  
+            <span>minutes</span>
+        </div>
+    
+        <div id="secondsC2" class="timerbox">
+            <p id="seconds2">0</p>  
+            <span>seconds</span>
+        </div>
+    
+    </div>
+
+    <header class="timercaption">Days since I coded this timer</header>
+
+    </section>
+
+    </div>
+
+  </div>
+
+  <!-- HORIZONTAL RULE1   -->
+  <div class="container g-5 horirule">
+  <div class="row g-5">
+    <hr class="dashed">
+  </div>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="row g-5 d-flex justify-content-center">    
+          
+    <div class="col-sm-10 d-flex justify-content-center"> 
+      <div id="quizcontainer">
+        <h1 id="H1question"> </h1>
+        <div id="quizoptions">
+        <ul>
+            <li>
+                <input type="radio" id="a" name="answer" class="quizanswer">
+                <label id="labelatext" for="a"> </label>
+            </li>
+            <li>
+                <input type="radio" id="b" name="answer" class="quizanswer">
+                <label id="labelbtext" for="b"> </label>
+            </li>
+            <li>
+                <input type="radio" id="c" name="answer" class="quizanswer">
+                <label id="labelctext" for="c"> </label>
+            </li>
+            <li>
+                <input type="radio" id="d" name="answer" class="quizanswer">
+                <label id="labeldtext" for="d"> </label>
+            </li>                                    
+        </ul>
+      </div>
+        <button onclick="submitans()" id="submit">Submit</button>
+        <div id="tally">Score: 0/3</div>
+      </div>
+    </div>
+
+  </div>   
+    
+</div>
+
+
+
+<!-- HORIZONTAL RULE2   -->
+<div class="container g-5 horirule">
+  <div class="row g-5">
+    <hr class="dashed">
+  </div>
+</div>
+  
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+      <div class="row p-3 d-flex align-items-end">
+          <div class="col col-lg-6">
+              &copy; 2022 Created by Yu Shan
+         </div>
+              
+         <div class="col col-lg-3">
+              <b>Modules</b><br>
+              <a class="normallinks" href="wd-java.html">JavaScript</a><br>
+              <a class="normallinks" href="wd-ux.html">UX/UI</a>
+         </div>
+   
+          <div class="col col-lg-3">
+            <a class="CapstoneAnnounce" href="wd-rubric.html">Scoring Rubric</a>        
+         </div>
+      </div>  
+  </div>     
+</footer>
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- TIMER JAVASCRIPT -->
+<script>
+const goal = "20 Oct 2031"
+
+function countdown(){
+    const goalDate = new Date(goal);
+    const currentDate = new Date();
+
+    const totalSeconds = (goalDate - currentDate) / 1000
+
+    const days = Math.floor(totalSeconds / 3600 / 24);
+    const hours = Math.floor(totalSeconds / 3600) % 24;
+    const minutes = Math.floor(totalSeconds / 60) % 60;
+    const seconds = Math.floor(totalSeconds) % 60;
+
+    
+    
+    document.getElementById('days').innerHTML = days;
+    document.getElementById('hours').innerHTML = formatTime(hours);
+    document.getElementById('minutes').innerHTML = formatTime(minutes);
+    document.getElementById('seconds').innerHTML = formatTime(seconds);
+
+}
+
+function countup(){
+    const startDate = new Date(2021, 11, 27, 22, 00, 00, 00);
+    const currentDate = new Date();
+
+    const newSeconds = (currentDate - startDate) / 1000
+
+    const day2 = Math.floor(newSeconds / 3600 / 24);
+    const hour2 = Math.floor(newSeconds / 3600) % 24;
+    const minute2 = Math.floor(newSeconds / 60) % 60;
+    const second2 = Math.floor(newSeconds) % 60;
+
+    document.getElementById('days2').innerHTML = formatTime(day2);
+    document.getElementById('hours2').innerHTML = formatTime(hour2);
+    document.getElementById('minutes2').innerHTML = formatTime(minute2);
+    document.getElementById('seconds2').innerHTML = formatTime(second2);
+
+// console.log(startDate)
+}
+
+function formatTime(time) {
+    return time < 10 ? (`0${time}`) : time;
+}
+
+setInterval(countdown, 1000);
+setInterval(countup, 1000);
+
+</script>
+
+<!-- QUIZ JAVASCRIPT -->
+<script>
+  const quizData = [
+    {
+        question: "Is an Apple a fruit?",
+        a: 'Yes',
+        b: 'No',
+        c: 'Maybe',
+        d: 'No Idea',
+        correct: 'Yes'
+    }, {
+        question: 'What is 1 + 1?',
+        a: '1',
+        b: '2',
+        c: '3',
+        d: '4',
+        correct: '2'
+    }, {
+        question: 'Which planet are we on right now?',
+        a: 'Mars',
+        b: 'Jupiter',
+        c: 'Earth',
+        d: 'Saturn',
+        correct: 'Earth'
+    }
+]
+
+
+var H1question = document.getElementById("H1question");
+var currentQuiz = 0;
+var correctscore = 0;
+
+
+function startQuiz() {
+
+    loadQuiz();
+}
+
+function submitans() {
+
+    if (currentQuiz == quizData.length) {
+        location.reload();
+        }  
+     
+    if ($('.quizanswer').is(':checked')) {
+
+        var selection = document.querySelector('input[type="radio"]:checked');
+        var selectiontext = ("label" + selection.id + "text")
+        var chosenanswer = document.getElementById(selectiontext).innerText;
+
+        if (chosenanswer == quizData[currentQuiz].correct) {
+            correctscore++;
+        } 
+
+        document.getElementById('tally').innerHTML = "Score: " + correctscore + "/3";
+
+        currentQuiz++;
+        loadQuiz();   
+        document.getElementById("a").checked = false;
+        document.getElementById("b").checked = false;
+        document.getElementById("c").checked = false;
+        document.getElementById("d").checked = false;
+
+
+    }
+}
+
+function loadQuiz() {
+
+
+    if (currentQuiz < quizData.length) {
+    H1question.innerText = quizData[currentQuiz].question;
+    labelatext.innerText = quizData[currentQuiz].a;
+    labelbtext.innerText = quizData[currentQuiz].b;
+    labelctext.innerText = quizData[currentQuiz].c;
+    labeldtext.innerText = quizData[currentQuiz].d;
+    } else {
+        H1question.innerText = "Thanks for playing!";
+        document.getElementById('quizoptions').style.display="none";
+        document.getElementById('submit').innerHTML="Play again?";
+        }
+
+    
+
+}
+</script>
+
+</body>
+
+</html>
