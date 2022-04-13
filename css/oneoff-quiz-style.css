@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -17,14 +17,13 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+} */
 
 body{
-    background-color: lightslategray;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 header{
-    font-family: 'Ubuntu Mono', monospace;
     font-size: 200%;
     color: black;
     /* border: solid 1px; */
@@ -38,7 +37,6 @@ header a{
 }
 
 nav{
-    font-family: 'Ubuntu Mono', monospace;
     font-size: 200%;
     color: black;
     text-align: right;
@@ -57,19 +55,32 @@ nav a:nth-child(3), nav a:last-child{
     font-size: 75%;
 }
 
-section{
-    font-family: 'Ubuntu Mono', monospace;
-    font-size: 100%;
-    padding: 5px;
-    outline: solid 5px;
-    display: block;
-    margin: 0% 2% 0% 2%;
-    clear: right;
-    /* clear property can help stop float */
+#greetings{
+    font-size: 150%;
 }
 
-p{
-    margin: 1%;
+button{
+    display: inline;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    height: 30px;
+    font-family: inherit;
+    color:#666666;
+    background:#FFFFFF;
+    padding: 0px 15px;
+
+}
+
+section{
+    font-size: 100%;
+    outline: none;
+    padding: 5px;
+    display: block;
+    margin: 2% 2%;
+    clear: right;
+    /* clear property can help stop float */
 }
 
 section a{
@@ -87,11 +98,10 @@ section a:hover{
 
 section a:visited{
     font-size: 500%;
-    color: black;
+    color: red;
 }
 
 form{
-    font-family: 'Ubuntu Mono', monospace;
     font-size: 150%;
     padding: 15px;
     margin: auto;
@@ -102,3 +112,39 @@ form{
 input{
     margin: 15px;
 }
+
+
+
+
+/* quiz styling */
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    min-height: 100vh;
+  }
+
+h1{
+    font-size: large;
+}
+
+ul{
+    width: 500px;
+    list-style-type: none;
+    align-items: left;
+}
+
+#Submit {
+    width: 500px;
+    padding: 25px;
+    font-family: inherit;
+    font-size: large;
+}
+
+#tally{
+    padding: 15px;
+}
+
